@@ -1,0 +1,8 @@
+# UFW rules (run on the server)
+sudo ufw allow OpenSSH
+sudo ufw allow 'Nginx HTTP'
+sudo ufw enable
+sudo ufw status verbose
+
+# Optional, if HTTPS is configured later:
+# sudo ufw allow 'Nginx HTTPS'
